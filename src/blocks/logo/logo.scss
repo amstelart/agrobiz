@@ -7,5 +7,13 @@
   $block-name:                &; // #{$block-name}__element
 
   display: block;
+  color: $color-main;
   white-space: nowrap;
+  font-size: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  span {
+    color: $black;
+  }
 }

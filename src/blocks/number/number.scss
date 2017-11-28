@@ -1,0 +1,40 @@
+// В этом файле должны быть стили для БЭМ-блока number, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.number {
+
+  $block-name:                &; // #{$block-name}__element
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    text-align: center;
+    width: 190px;
+    margin-bottom: 30px;
+  }
+
+  &__item-header {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffba26;
+    span {
+      font-size: 30px;
+    }
+  }
+
+  &__item-separate {
+    height: 1px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  &__item-caption {
+    color: #fff;
+    line-height: 2em;
+  }
+
+}

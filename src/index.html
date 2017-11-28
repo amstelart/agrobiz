@@ -15,14 +15,417 @@
     <div class="page__content">
 
       @@include('blocks/page-header/page-header.html')
+      @@include('blocks/main-nav/main-nav.html')
 
-      <main role="main">
+      <div class="main-slider">
+        <div class="owl-carousel" id="main-slider">
+          <div class="main-slider__item" style="background-image: url(img/demo-slide-image-01.jpg);">
+          </div>
+          <div class="main-slider__item" style="background-image: url(img/demo-slide-image-01.jpg);">
+          </div>
+          <div class="main-slider__item" style="background-image: url(img/demo-slide-image-01.jpg);">
+          </div>
+          <div class="main-slider__item" style="background-image: url(img/demo-slide-image-01.jpg);">
+          </div>
+        </div>
+      </div>
+
+      <section class="main-section">
+        <div class="main-section__inner">
+          <h2>Агропроект «Горчица»</h2>
+          <p>Предоставляем хозяйствам семена белой горчицы с гарантированной покупкой урожая</p>
+          <p>Предоставляем хозяйствам семена белой горчицы и устраиваем полное агрономическое сопровождения,
+          кредитуем средствами защиты растений и микроудобрениями с гарантированной покупкой выращенного урожая данной культуры</p>
+          <button class="btn">Оставить заявку</button>
+        </div>
+      </section>
+
+      <section class="main-section main-section--overlay main-section--number" style="background-image: url(img/section-number-bg.jpg);">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Агробизнес - это</h2>
+          </div>
+          <div class="number">
+            <div class="number__item">
+              <div class="number__item-header"><span>20</span> лет</div>
+              <div class="number__item-separate"></div>
+              <div class="number__item-caption">На рынке</div>
+            </div>
+            <div class="number__item">
+              <div class="number__item-header"><span>50 000</span> литров</div>
+              <div class="number__item-separate"></div>
+              <div class="number__item-caption">Мощность завода в сутки</div>
+            </div>
+            <div class="number__item">
+              <div class="number__item-header"><span>18 000</span> семян</div>
+              <div class="number__item-separate"></div>
+              <div class="number__item-caption">Подсолнечника сербской селекции произведено за год</div>
+            </div>
+            <div class="number__item">
+              <div class="number__item-header">до <span>4000</span> га в год</div>
+              <div class="number__item-separate"></div>
+              <div class="number__item-caption">Убираем сахарной свеклы</div>
+            </div>
+            <div class="number__item">
+              <div class="number__item-header">до <span>300 000</span> тон</div>
+              <div class="number__item-separate"></div>
+              <div class="number__item-caption">Ежегодной погрузки</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section main-section--seeds">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Семена</h2>
+            <p class="main-section__title-caption">Семена сои и подсолнечника по лицензии Сербии</p>
+          </div>
+          <div class="seeds-nav">
+            <div class="seeds-nav__item">
+              <div class="seeds-nav__item-image" style="background-image: url(img/seeds-nav-soy.jpg);"></div>
+              <div class="seeds-nav__item-caption">Соя</div>
+            </div>
+            <div class="seeds-nav__item seeds-nav__item--active">
+              <div class="seeds-nav__item-image" style="background-image: url(img/seeds-nav-mustard.jpg);"></div>
+              <div class="seeds-nav__item-caption">Горчица</div>
+            </div>
+            <div class="seeds-nav__item">
+              <div class="seeds-nav__item-image" style="background-image: url(img/seeds-nav-sunflower.jpg);"></div>
+              <div class="seeds-nav__item-caption">Подсолнечник</div>
+            </div>
+            <div class="seeds-nav__item">
+              <div class="seeds-nav__item-image" style="background-image: url(img/seeds-nav-corn.jpg);"></div>
+              <div class="seeds-nav__item-caption">Кукуруза</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section main-section--fertilizer">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Микроудобрения МикроФид</h2>
+            <p class="main-section__title-caption"> Микроудобрения для внекорневых(листовых) подкормок серии МикроФид – это высокопитательные комплексы, каждый из которых
+              включает в себя глицериновую основу и необходимый набор микроэлементов в доступной для растений хелатной форме.</p>
+          </div>
+          <div class="cards cards--fertilizer">
+
+            <div class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__image">
+                  <img src="img/card-image-mikrofid-kompleks.jpg" alt="">
+                </div>
+                <div class="cards__title">МикроФид Комплекс</div>
+                <div class="cards__caption">Универсальное комплексное жидкое микроудобрение</div>
+                <div class="cards__separate"></div>
+                <div class="cards__text">
+                  Применяется на всех сельскохозяйственных
+                  культурах и плодовых насаждениях
+                </div>
+              </a>
+            </div>
+
+            <div class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__image">
+                  <img src="img/card-image-mikrofid-bor.jpg" alt="">
+                </div>
+                <div class="cards__title">МикроФид Бор</div>
+                <div class="cards__caption">Универсальное комплексное жидкое микроудобрение</div>
+                <div class="cards__separate"></div>
+                <div class="cards__text">
+                  Применяется на всех сельскохозяйственных
+                  культурах и плодовых насаждениях
+                </div>
+              </a>
+            </div>
+
+            <div class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__image">
+                  <img src="img/card-image-mikrofid-tsink.jpg" alt="">
+                </div>
+                <div class="cards__title">МикроФид Цинк</div>
+                <div class="cards__caption">Универсальное комплексное жидкое микроудобрение</div>
+                <div class="cards__separate"></div>
+                <div class="cards__text">
+                  Применяется на всех сельскохозяйственных
+                  культурах и плодовых насаждениях
+                </div>
+              </a>
+            </div>
+
+            <div class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__image">
+                  <img src="img/card-image-mikrofid-azot.jpg" alt="">
+                </div>
+                <div class="cards__title">МикроФид Азот</div>
+                <div class="cards__caption">Универсальное комплексное жидкое микроудобрение</div>
+                <div class="cards__separate"></div>
+                <div class="cards__text">
+                  Применяется на всех сельскохозяйственных
+                  культурах и плодовых насаждениях
+                </div>
+              </a>
+            </div>
+
+            <div class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__image">
+                  <img src="img/card-image-mikrofid-profi.jpg" alt="">
+                </div>
+                <div class="cards__title">МикроФид Профи</div>
+                <div class="cards__caption">Универсальное комплексное жидкое микроудобрение</div>
+                <div class="cards__separate"></div>
+                <div class="cards__text">
+                  Применяется на всех сельскохозяйственных
+                  культурах и плодовых насаждениях
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section main-section--services">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Услуги</h2>
+            <div class="services-cards">
+              <div class="services-cards__item">
+                <a href="#" class="services-cards__link">
+                  <div class="services-cards__image"></div>
+                  <div class="services-cards__caption">Погрузка и уборка комбайнами ROPA</div>
+                </a>
+              </div>
+              <div class="services-cards__item">
+                <a href="#" class="services-cards__link">
+                  <div class="services-cards__image"></div>
+                  <div class="services-cards__caption">Посев семян подсолнечника и кукурузы</div>
+                </a>
+              </div>
+              <div class="services-cards__item">
+                <a href="#" class="services-cards__link">
+                  <div class="services-cards__image"></div>
+                  <div class="services-cards__caption">Подготовка почвы техникой Lemken</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section main-section--testimonies">
+        <div class="main-section__inner">
+          <div class="main-section__header main-section__header--action">
+            <h2 class="main-section__title">Свидетельства и декларации</h2>
+            <a href="#" class="btn">Просмотреть все</a>
+          </div>
+          <div class="owl-carousel image-carousel" id="testimonies-carousel">
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section main-section--reviews">
+        <div class="main-section__inner">
+          <div class="main-section__header main-section__header--action">
+            <h2 class="main-section__title">Отзывы</h2>
+            <a href="#" class="btn">Просмотреть все</a>
+          </div>
+          <div class="owl-carousel" id="reviews-carousel">
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+            <div class="image-carousel__item">
+              <img src="img/demo-doc-image.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section main-section--overlay main-section--number" style="background-image: url(img/section-number-bg.jpg);">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Химпрополка полей самоходными опрыскивателями на базе газ 66</h2>
+            <p class="main-section__title-caption">Наши автомобили оборудованы GPS навигаторами</p>
+          </div>
+          <div class="number">
+            <div class="number__item">
+              <div class="number__item-header">70 000 га</div>
+              <div class="number__item-separate"></div>
+              <div class="number__item-caption">Площадь обработки в год</div>
+            </div>
+            <div class="number__item">
+              <div class="number__item-header">24 м</div>
+              <div class="number__item-separate"></div>
+              <div class="number__item-caption">Ширина захвата</div>
+            </div>
+            <div class="number__item">
+              <div class="number__item-header">50 л/га</div>
+              <div class="number__item-separate"></div>
+              <div class="number__item-caption">Норма расхода рабочей жидкости</div>
+            </div>
+            <div class="number__item">
+              <div class="number__item-header">до 500 га</div>
+              <div class="number__item-separate"></div>
+              <div class="number__item-caption">Производительность в сутки</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section main-section--partners">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Наши партнёры</h2>
+          </div>
+          <div class="partners">
+            <div class="partners__item">
+              <a href="#" class="partners__link">
+                <div class="partners__image">
+                  <img src="img/partners-image-01.jpg" alt="">
+                </div>
+                <div class="partners__separate"></div>
+                <div class="partners__text">
+                  Группа компаний «Химстар»
+                  – эксклюзивный поставщик
+                  химических средств защиты
+                  растений международного
+                  агрохимического холдинга
+                  Peters & Вurg в Российскую
+                  Федерацию
+                </div>
+              </a>
+            </div>
+            <div class="partners__item">
+              <a href="#" class="partners__link">
+                <div class="partners__image">
+                  <img src="img/partners-image-01.jpg" alt="">
+                </div>
+                <div class="partners__separate"></div>
+                <div class="partners__text">
+                  Группа компаний «Химстар»
+                  – эксклюзивный поставщик
+                  химических средств защиты
+                  растений международного
+                  агрохимического холдинга
+                  Peters & Вurg в Российскую
+                  Федерацию
+                </div>
+              </a>
+            </div>
+            <div class="partners__item">
+              <a href="#" class="partners__link">
+                <div class="partners__image">
+                  <img src="img/partners-image-01.jpg" alt="">
+                </div>
+                <div class="partners__separate"></div>
+                <div class="partners__text">
+                  Группа компаний «Химстар»
+                  – эксклюзивный поставщик
+                  химических средств защиты
+                  растений международного
+                  агрохимического холдинга
+                  Peters & Вurg в Российскую
+                  Федерацию
+                </div>
+              </a>
+            </div>
+            <div class="partners__item">
+              <a href="#" class="partners__link">
+                <div class="partners__image">
+                  <img src="img/partners-image-01.jpg" alt="">
+                </div>
+                <div class="partners__separate"></div>
+                <div class="partners__text">
+                  Группа компаний «Химстар»
+                  – эксклюзивный поставщик
+                  химических средств защиты
+                  растений международного
+                  агрохимического холдинга
+                  Peters & Вurg в Российскую
+                  Федерацию
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section main-section--overlay main-section--feedback" style="background-image: url(img/section-feedback-bg.jpg);">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Остались вопросы</h2>
+            <p class="main-section__title-caption">Для получения подробной инфомрации позвоните нам по тел.: +7 (4712) 36-01-37 или оставьте заявку</p>
+          </div>
+          <div class="feedback">
+            <form class="feedback__form" action="">
+              <div class="fields-group feedback__fields-group">
+                <label class="field-text feedback__field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input field-text__input--rounded" type="text" placeholder="ИМЯ" id="">
+                  </span>
+                </label>
+                <label class="field-text feedback__field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input field-text__input--rounded" type="text" placeholder="ТЕЛЕФОН" id="">
+                  </span>
+                </label>
+                <div class="field-actions feedback__field">
+                  <button class="btn">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- <main role="main">
 
         <h1>NTH start project</h1>
 
         <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
 
-      </main>
+      </main> -->
 
     </div>
 

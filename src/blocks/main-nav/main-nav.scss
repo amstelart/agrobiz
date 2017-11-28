@@ -24,11 +24,17 @@ $transition-time:             0.3s !default;
   position: relative;
   z-index: 10;
 
+  &__inner {
+    @include container;
+  }
+
   // первый уровень
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+    text-transform: uppercase;
+    font-weight: 500;
 
     // мобильный вид списка
     @media (max-width: ($menu-desktop-width - 1)) {
@@ -68,6 +74,7 @@ $transition-time:             0.3s !default;
   &__link {
     display: block;
     padding: 0.5em;
+    color: #b8b8b8;
     text-decoration: none;
     background-color: #fff;
 

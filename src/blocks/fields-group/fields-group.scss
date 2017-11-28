@@ -8,6 +8,7 @@
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: flex-start;
   margin-bottom: ($line-height / 2);
 
@@ -25,24 +26,11 @@
   }
 
   .field-actions,
-  // .field-file,                // обычно, не участвует в группировке
-  // .field-select,              // обычно, не участвует в группировке
   .field-text {
     margin: 0;
   }
 
   .field-actions {
-
-    &:not(:last-child) .btn {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:not(:first-child) .btn {
-      border-left: 0;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
 
     .btn {
 
@@ -55,52 +43,6 @@
 
   .field-text {
 
-    &:not(:last-child) .field-text__input {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:not(:first-child) .field-text__input {
-      border-left: 0;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
   }
 
-  // .field-file {               // обычно, не участвует в группировке
-
-  //   input {
-  //     position: absolute;
-  //   }
-
-  //   &:not(:last-child) .field-file__name-text {
-  //     border-top-right-radius: 0;
-  //     border-bottom-right-radius: 0;
-  //   }
-
-  //   &:not(:first-child) .field-file__name-text {
-  //     border-left: 0;
-  //     border-top-left-radius: 0;
-  //     border-bottom-left-radius: 0;
-
-  //     &:before {
-  //       border-top-left-radius: 0;
-  //       border-bottom-left-radius: 0;
-  //     }
-  //   }
-  // }
-
-  // .field-select {             // обычно, не участвует в группировке
-
-  //   &:not(:last-child) .field-select__select {
-  //     border-top-right-radius: 0;
-  //     border-bottom-right-radius: 0;
-  //   }
-
-  //   &:not(:first-child) .field-select__select {
-  //     border-left: 0;
-  //     border-top-left-radius: 0;
-  //     border-bottom-left-radius: 0;
-  //   }
-  // }
 }

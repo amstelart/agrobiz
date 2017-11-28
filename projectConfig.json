@@ -58,7 +58,19 @@
     "embed-responsive": [],
     "pie-chart": [],
     "fields-group": [],
-    "tooltip": []
+    "tooltip": [],
+    "info": [],
+    "main-slider": [],
+    "main-section": [],
+    "page-footer-top": [],
+    "page-footer-bottom": [],
+    "footer-nav": [],
+    "number": [],
+    "seeds-nav": [],
+    "cards": [],
+    "services-cards": [],
+    "partners": [],
+    "feedback": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

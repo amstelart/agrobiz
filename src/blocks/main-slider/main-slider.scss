@@ -1,0 +1,15 @@
+// В этом файле должны быть стили для БЭМ-блока main-slider, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-slider {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+    min-height: 600px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+}

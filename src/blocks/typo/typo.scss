@@ -61,7 +61,7 @@ h4,
 h5,
 h6 {
   font-family: $font-family--headings;
-  font-weight: 700;
+  font-weight: 400;
   line-height: $line-height;
   color: currentColor;
 }
@@ -234,4 +234,8 @@ pre {
   width: 100%;
   overflow-x: auto;
   tab-size: 2;
+}
+
+a {
+  color: $black;
 }
