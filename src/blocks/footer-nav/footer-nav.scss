@@ -10,6 +10,24 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    text-transform: uppercase;
+    column-count: 3;
+  }
+
+  &__item {
+    column-gap: 0;
+    margin: 0 10px 10px 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover,
+    &:focus {
+      color: $color-main;
+    }
+
   }
 
 }

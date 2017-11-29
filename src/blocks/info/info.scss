@@ -10,6 +10,36 @@
 
   &__item {
     padding: 0 30px;
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    &--phone {
+      position: relative;
+      padding-left: 25px;
+      background-image: url(../img/icon-phone.svg);
+    }
+    &--mail {
+      position: relative;
+      padding-left: 25px;
+      background-image: url(../img/icon-mail.svg);
+      background-position: left 4px;
+    }
+    &--addres {
+      position: relative;
+      padding-left: 25px;
+      background-image: url(../img/icon-marker.svg);
+      line-height: 1.6;
+    }
+
+  }
+
+  &--footer {
+    flex-direction: column;
+
+    #{$block-name}__item {
+      margin-bottom: 20px;
+    }
+
   }
 
 }

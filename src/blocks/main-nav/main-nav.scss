@@ -56,17 +56,27 @@ $transition-time:             0.3s !default;
     // настольный вид списка
     @media (min-width: $menu-desktop-width) {
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
+      padding: 1.5em 0;
     }
   }
 
   &__item {
     position: relative;
 
+    @media (min-width: $menu-desktop-width) {
+      white-space: nowrap;
+    }
+
     &--active {
 
       & > #{$block-name}__link {
         color: #000;
+        &:hover,
+        &:focus {
+          color: #000;
+        }
       }
     }
   }
@@ -81,7 +91,8 @@ $transition-time:             0.3s !default;
     &:hover,
     &:focus {
       text-decoration: none;
-      background-color: $gray-lightest;
+      color: darken(#b8b8b8, 15%);
+      background-color: transparent;
     }
 
     &--lvl-2 {

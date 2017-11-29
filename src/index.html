@@ -17,23 +17,36 @@
       @@include('blocks/page-header/page-header.html')
       @@include('blocks/main-nav/main-nav.html')
 
-      <div class="main-slider">
-        <div class="owl-carousel" id="main-slider">
+      <section class="main-section main-section--main-slider">
+        <div class="owl-carousel" class="main-slider" id="main-slider">
           <div class="main-slider__item" style="background-image: url(img/demo-slide-image-01.jpg);">
+            <div class="main-section__inner">
+              <div class="main-slider__title">Агрономическое <br>сопровождение</div>
+              <p class="main-slider__caption">Наши специалисты порекомендуют оптимальную систему<br>
+              защиты растений на любой культуре</p>
+            </div>
           </div>
           <div class="main-slider__item" style="background-image: url(img/demo-slide-image-01.jpg);">
+            <div class="main-section__inner">
+              <div class="main-slider__title">Агрономическое <br>сопровождение</div>
+              <p class="main-slider__caption">Наши специалисты порекомендуют оптимальную систему<br>
+              защиты растений на любой культуре</p>
+            </div>
           </div>
           <div class="main-slider__item" style="background-image: url(img/demo-slide-image-01.jpg);">
-          </div>
-          <div class="main-slider__item" style="background-image: url(img/demo-slide-image-01.jpg);">
+            <div class="main-section__inner">
+              <div class="main-slider__title">Агрономическое <br>сопровождение</div>
+              <p class="main-slider__caption">Наши специалисты порекомендуют оптимальную систему<br>
+              защиты растений на любой культуре</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section class="main-section">
+      <section class="main-section main-section--info">
         <div class="main-section__inner">
           <h2>Агропроект «Горчица»</h2>
-          <p>Предоставляем хозяйствам семена белой горчицы с гарантированной покупкой урожая</p>
+          <p><strong>Предоставляем хозяйствам семена белой горчицы с гарантированной покупкой урожая<strong></p>
           <p>Предоставляем хозяйствам семена белой горчицы и устраиваем полное агрономическое сопровождения,
           кредитуем средствами защиты растений и микроудобрениями с гарантированной покупкой выращенного урожая данной культуры</p>
           <button class="btn">Оставить заявку</button>
@@ -187,6 +200,39 @@
             </div>
 
           </div>
+
+          <div class="sub-section">
+            <div class="sub-section__title">На стадии регистрации</div>
+            <div class="sub-section__cards">
+              <div class="sub-section__card">
+                <a class="sub-section__card-link" href="#"></a>
+              </div>
+              <div class="sub-section__card">
+                <a class="sub-section__card-link" href="#"></a>
+              </div>
+              <div class="sub-section__card">
+                <a class="sub-section__card-link" href="#"></a>
+              </div>
+              <div class="sub-section__card">
+                <a class="sub-section__card-link" href="#"></a>
+              </div>
+              <div class="sub-section__card">
+                <a class="sub-section__card-link" href="#"></a>
+              </div>
+              <div class="sub-section__card">
+                <a class="sub-section__card-link" href="#"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <div class="sub-section__title">Отчет о научно исследовательской работе</div>
+            <div class="sub-section__btn">
+              <a class="btn" href="#">Просмотреть</a>
+              <span>Отчет2017.doc (3мб)</span>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -194,25 +240,31 @@
         <div class="main-section__inner">
           <div class="main-section__header">
             <h2 class="main-section__title">Услуги</h2>
-            <div class="services-cards">
-              <div class="services-cards__item">
-                <a href="#" class="services-cards__link">
-                  <div class="services-cards__image"></div>
-                  <div class="services-cards__caption">Погрузка и уборка комбайнами ROPA</div>
-                </a>
-              </div>
-              <div class="services-cards__item">
-                <a href="#" class="services-cards__link">
-                  <div class="services-cards__image"></div>
-                  <div class="services-cards__caption">Посев семян подсолнечника и кукурузы</div>
-                </a>
-              </div>
-              <div class="services-cards__item">
-                <a href="#" class="services-cards__link">
-                  <div class="services-cards__image"></div>
-                  <div class="services-cards__caption">Подготовка почвы техникой Lemken</div>
-                </a>
-              </div>
+          </div>
+          <div class="services-cards">
+            <div class="services-cards__item">
+              <a href="#" class="services-cards__link">
+                <div class="services-cards__image">
+                  <img src="img/services-image-01.jpg" alt="">
+                </div>
+                <div class="services-cards__caption">Погрузка и уборка комбайнами ROPA</div>
+              </a>
+            </div>
+            <div class="services-cards__item">
+              <a href="#" class="services-cards__link">
+                <div class="services-cards__image">
+                  <img src="img/services-image-01.jpg" alt="">
+                </div>
+                <div class="services-cards__caption">Посев семян подсолнечника и кукурузы</div>
+              </a>
+            </div>
+            <div class="services-cards__item">
+              <a href="#" class="services-cards__link">
+                <div class="services-cards__image">
+                  <img src="img/services-image-01.jpg" alt="">
+                </div>
+                <div class="services-cards__caption">Подготовка почвы техникой Lemken</div>
+              </a>
             </div>
           </div>
         </div>
@@ -222,30 +274,52 @@
         <div class="main-section__inner">
           <div class="main-section__header main-section__header--action">
             <h2 class="main-section__title">Свидетельства и декларации</h2>
-            <a href="#" class="btn">Просмотреть все</a>
+            <a href="#" class="btn btn--see-all"><img class="btn__icon" src="img/icon-btn-doc.svg" alt="">Просмотреть все</a>
           </div>
           <div class="owl-carousel image-carousel" id="testimonies-carousel">
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
+              <div class="image-carousel__caption">Название декларации</div>
             </div>
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
+              <div class="image-carousel__caption">Название декларации</div>
             </div>
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
+              <div class="image-carousel__caption">Название декларации</div>
             </div>
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
+              <div class="image-carousel__caption">Название декларации</div>
             </div>
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
+              <div class="image-carousel__caption">Название декларации</div>
             </div>
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
+              <div class="image-carousel__caption">Название декларации</div>
             </div>
-            <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
-            </div>
+
           </div>
         </div>
       </section>
@@ -254,30 +328,52 @@
         <div class="main-section__inner">
           <div class="main-section__header main-section__header--action">
             <h2 class="main-section__title">Отзывы</h2>
-            <a href="#" class="btn">Просмотреть все</a>
+            <a href="#" class="btn btn--see-all"><img class="btn__icon" src="img/icon-btn-doc.svg" alt="">Просмотреть все</a>
           </div>
-          <div class="owl-carousel" id="reviews-carousel">
+          <div class="owl-carousel image-carousel" id="reviews-carousel">
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
             </div>
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
             </div>
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
             </div>
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
             </div>
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
             </div>
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
             </div>
+
             <div class="image-carousel__item">
-              <img src="img/demo-doc-image.jpg" alt="">
+              <a class="image-carousel__link" href="#">
+                <img src="img/demo-doc-image.jpg" alt="">
+              </a>
             </div>
+
           </div>
         </div>
       </section>
@@ -309,6 +405,13 @@
               <div class="number__item-separate"></div>
               <div class="number__item-caption">Производительность в сутки</div>
             </div>
+          </div>
+          <div class="main-section__application">
+            <div class="main-section__application-header">
+              <h2>Оставьте заявку на химпрополку полей</h2>
+              <p>Мы перезвоним вам и уточним детали</p>
+            </div>
+            <a href="#" class="btn">Оставить заявку</a>
           </div>
         </div>
       </section>

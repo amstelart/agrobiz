@@ -9,6 +9,7 @@
 
   &__inner {
     @include container;
+    text-align: right;
   }
 
 }

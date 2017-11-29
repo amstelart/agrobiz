@@ -14,4 +14,24 @@
     justify-content: space-between;
   }
 
+  &__content {
+    @include row;
+  }
+
+  &__col {
+    &--logo {
+      @include make-col(3);
+    }
+    &--nav {
+      @include make-col(6);
+    }
+    &--info {
+      @include make-col(3);
+    }
+  }
+
+  .logo--footer {
+    margin-right: 30px;
+  }
+
 }

@@ -1,0 +1,47 @@
+// В этом файле должны быть стили для БЭМ-блока sub-section, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.sub-section {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    margin: 1.7em 0;
+  }
+
+  &__cards {
+    @include row;
+  }
+
+  &__card {
+    @include make-col(2);
+    margin-bottom: 30px;
+  }
+
+  &__card-link {
+    width: 100%;
+    display: block;
+    padding-bottom: 100%;
+    background: #e5e5e5;
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .btn {
+      margin-bottom: 15px;
+      min-width: 260px;
+    }
+    span {
+      font-size: 14px;
+      color: #6c6c6c;
+    }
+  }
+
+}

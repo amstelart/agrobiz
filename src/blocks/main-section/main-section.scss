@@ -35,6 +35,14 @@
     text-align: center;
   }
 
+  &__application {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__application-header {
+    margin-bottom: 35px;
+  }
+
   &--overlay {
     position: relative;
     background-size: cover;
@@ -61,6 +69,30 @@
     #{$block-name}__title-caption {
       color: #fff;
     }
+    #{$block-name}__application {
+      color: #fff;
+    }
+  }
+
+  &--main-slider {
+    padding: 0;
+  }
+
+  &--info {
+    h2 {
+      margin-top: 0;
+    }
+    p {
+      color: #6c6c6c;
+      &:last-of-type {
+        margin-bottom: 1.7em;
+      }
+    }
+    strong {
+      color: #000;
+      font-size: 18px;
+      font-weight: 400;
+    }
   }
 
   &--number {
@@ -85,10 +117,14 @@
     background: #e3e3e3;
     background-image: url(../img/tractor-bg.svg);
     background-repeat: no-repeat;
+    background-position: -100px 50px;
   }
 
   &--reviews {
     background: #e3e3e3;
+    background-image: url(../img/doc-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 250px 280px;
   }
 
   &--feedback {

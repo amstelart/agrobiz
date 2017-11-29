@@ -14,12 +14,21 @@
   &__link {
     text-decoration: none;
     display: flex;
+    flex-direction: column;
     flex-basis: 100%;
   }
-  &__image {}
+  &__image {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
   &__caption {
     background: #fff;
-    padding: 15px;
+    padding: 25px 15px;
   }
 
 }

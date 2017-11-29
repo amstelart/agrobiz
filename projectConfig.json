@@ -70,7 +70,9 @@
     "cards": [],
     "services-cards": [],
     "partners": [],
-    "feedback": []
+    "feedback": [],
+    "sub-section": [],
+    "image-carousel": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
