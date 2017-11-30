@@ -149,7 +149,7 @@
           <p><strong>Предоставляем хозяйствам семена белой горчицы с гарантированной покупкой урожая<strong></strong></strong></p>
           <p>Предоставляем хозяйствам семена белой горчицы и устраиваем полное агрономическое сопровождения,
           кредитуем средствами защиты растений и микроудобрениями с гарантированной покупкой выращенного урожая данной культуры</p>
-          <button class="btn">Оставить заявку</button>
+          <button class="btn" type="button" data-toggle="modal" data-target="#modal-call">Оставить заявку</button>
         </div>
       </section>
       <section class="main-section main-section--overlay main-section--number" style="background-image: url(img/section-number-bg.jpg);">
@@ -480,7 +480,7 @@
               <h2>Оставьте заявку на химпрополку полей</h2>
               <p>Мы перезвоним вам и уточним детали</p>
             </div>
-            <a href="#" class="btn">Оставить заявку</a>
+            <button class="btn" type="button" data-toggle="modal" data-target="#modal-call">Оставить заявку</button>
           </div>
         </div>
       </section>
@@ -643,7 +643,9 @@
         <div class="modal__content">
           <div class="modal__header">
             <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
-            <h4 class="modal__title">Оставьте заявку</h4>
+            <h2 class="modal__title">Остались вопросы?</h2>
+            <p class="modal__caption">Для получения подробной инфомрации позвоните
+            нам по тел.: +7-900-000-00-00 или оставьте заявку</p>
           </div>
           <div class="modal__body">
             <form class="modal-call__form" action="">
@@ -658,9 +660,13 @@
                 </span>
               </label>
               <div class="field-actions">
-                <button class="btn">Отправить</button>
+                <button class="btn">Оставить заявку</button>
               </div>
             </form>
+          </div>
+          <div class="modal__footer">
+            <p class="modal__footer-text">Оставляя заявку я соглашаюсь на обработку
+            персональных данных. <a href="#">Политика конфиденциальности</a></p>
           </div>
         </div>
       </div>
