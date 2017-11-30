@@ -21,12 +21,17 @@
       }
     }
 
+    @media (max-width: ($menu-desktop-width - 1)) {
+      @include make-col(6);
+    }
+
   }
 
   &__item-image {
     width: 100%;
     padding-bottom: 100%;
     background: #444;
+    background-size: cover;
   }
   &__item-caption {
     font-size: 24px;
@@ -34,6 +39,14 @@
     padding: 35px 0;
     font-weight: 500;
     border-bottom: 2px solid #e1e1e1;
+    @media (max-width: ($menu-desktop-width - 1)) {
+      padding: 15px 0;
+      margin-bottom: 15px;
+    }
+    @media (max-width: ($screen-sm - 1)) {
+      font-size: 16px;
+      line-height: 16px;
+    }
   }
 
 }

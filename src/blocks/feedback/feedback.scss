@@ -12,6 +12,12 @@
 
   }
 
+  &__fields-group {
+    @media (max-width: ($menu-desktop-width - 1)) {
+      flex-direction: column;
+    }
+  }
+
   &__field {
     flex: 1;
     .btn {
@@ -20,6 +26,14 @@
 
     &:not(:last-child) {
       margin-right: 30px;
+    }
+
+    @media (max-width: ($menu-desktop-width - 1)) {
+      width: 100%;
+      margin-bottom: 15px !important;
+      &:not(:last-child) {
+        margin-right: 0;
+      }
     }
   }
 

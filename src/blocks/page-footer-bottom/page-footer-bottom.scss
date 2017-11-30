@@ -10,6 +10,9 @@
   &__inner {
     @include container;
     text-align: right;
+    @media (max-width: ($menu-desktop-width - 1)) {
+      text-align: left;
+    }
   }
 
 }

@@ -18,6 +18,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: ($menu-desktop-width - 1)) {
+        flex-direction: column;
+      }
     }
   }
 
@@ -76,6 +79,9 @@
 
   &--main-slider {
     padding: 0;
+    @media (max-width: ($menu-desktop-width - 1)) {
+      display: none;
+    }
   }
 
   &--info {

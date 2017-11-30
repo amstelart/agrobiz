@@ -70,7 +70,7 @@ $border-radius:               3px !default;
     }
 
     &::placeholder {
-      color: $white;
+      color: $black;
       opacity: 1;
     }
 
@@ -86,6 +86,10 @@ $border-radius:               3px !default;
       border-color: $white;
       background: transparent;
       color: #fff;
+      &::placeholder {
+        color: $white;
+        opacity: 1;
+      }
     }
   }
 

@@ -21,12 +21,22 @@
   &__col {
     &--logo {
       @include make-col(3);
+      @media (max-width: ($menu-desktop-width - 1)) {
+        @include make-col(12);
+        margin-bottom: 25px;
+      }
     }
     &--nav {
       @include make-col(6);
+      @media (max-width: ($menu-desktop-width - 1)) {
+        display: none;
+      }
     }
     &--info {
       @include make-col(3);
+      @media (max-width: ($menu-desktop-width - 1)) {
+        @include make-col(12);
+      }
     }
   }
 
