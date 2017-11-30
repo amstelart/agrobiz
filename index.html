@@ -61,7 +61,7 @@
               <a href="#">Схема проезда</a>
             </div>
           </div>
-          <button class="btn btn--rounded btn--call">Заказать звонок</button>
+          <button class="btn btn--rounded btn--call" type="button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
           <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
         </div>
       </header>
@@ -317,7 +317,7 @@
           <div class="sub-section">
             <div class="sub-section__title">Отчет о научно исследовательской работе</div>
             <div class="sub-section__btn">
-              <a class="btn" href="#">Просмотреть</a>
+              <a class="btn" href="img/report2017.doc" download="">Просмотреть</a>
               <span>Отчет2017.doc (3мб)</span>
             </div>
           </div>
@@ -637,6 +637,33 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div id="modal-call" class="modal" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header">
+            <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <h4 class="modal__title">Оставьте заявку</h4>
+          </div>
+          <div class="modal__body">
+            <form class="modal-call__form" action="">
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="ИМЯ" id="">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="ТЕЛЕФОН" id="">
+                </span>
+              </label>
+              <div class="field-actions">
+                <button class="btn">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="js/script.min.js"></script>
