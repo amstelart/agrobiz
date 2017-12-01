@@ -49,6 +49,7 @@
   &--overlay {
     position: relative;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     &:before {
@@ -135,6 +136,7 @@
 
   &--feedback {
     padding: 3.5em 0;
+    background-attachment: inherit !important;
 
     #{$block-name}__header {
       margin-bottom: 1em;

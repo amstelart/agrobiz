@@ -15,12 +15,13 @@
       @include make-col(6);
     }
     @media (min-width: $screen-lg) {
-      @include make-col(3);
+      @include make-col(4);
     }
   }
 
   &__link {
     display: flex;
+    height: 100%;
     flex-direction: column;
     text-decoration: none;
     border: 2px solid #e5e5e5;
