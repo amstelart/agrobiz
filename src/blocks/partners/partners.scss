@@ -15,7 +15,7 @@
       @include make-col(6);
     }
     @media (min-width: $screen-lg) {
-      @include make-col(4);
+      @include make-col(3);
     }
   }
 
