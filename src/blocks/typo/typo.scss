@@ -61,9 +61,9 @@ h4,
 h5,
 h6 {
   font-family: $font-family--headings;
-  font-weight: 400;
+  font-weight: 500;
   line-height: $line-height;
-  color: currentColor;
+  color: $color-main;
 }
 
 // .h1,
@@ -136,6 +136,12 @@ address {
 ul,
 ol {
   padding-left: 1.2em;
+  color: $color-main;
+  li {
+    span {
+      color: #000;
+    }
+  }
 }
 
 ol ol,

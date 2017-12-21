@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Агробизнес</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+      @@include('blocks/main-nav/main-nav.html')
+
+      <section class="page-section">
+        <div class="page-section__inner">
+
+          <div class="page-section__header">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Контакты</a></li>
+            </ul>
+            <h1 class="page-title">Контакты</h1>
+          </div>
+
+          <div class="contacts">
+            <div class="contacts__info">
+              <p><strong>Адрес:</strong> 307030 Курская область, Медвенский р-н, пгт. Медвенка, ул. Промышленная,25</p>
+
+              <p><strong>Телефон:</strong> +7 (4712) 36-01-37</p>
+
+              <p><strong>E-mail:</strong> office@gk-agrobusiness.ru</p>
+            </div>
+            <div class="contacts__image">
+              <img src="img/contact-image.jpg" alt="">
+            </div>
+            <div class="contacts__map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac7ee213ae70def7de0f349b80623fbbe064c46f6fd890ce182fd39a1e9ef7434&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+          </div>
+
+          <!-- <main role="main">
+
+            <h1>NTH start project</h1>
+
+            <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
+
+          </main> -->
+
+        </div>
+      </section>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      <section class="main-section main-section--overlay main-section--feedback" style="background-image: url(img/section-feedback-bg.jpg);">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Остались вопросы</h2>
+            <p class="main-section__title-caption">Для получения подробной инфомрации позвоните нам по тел.: +7 (4712) 36-01-37 или оставьте заявку</p>
+          </div>
+          <div class="feedback">
+            <form class="feedback__form" action="">
+              <div class="fields-group feedback__fields-group">
+                <label class="field-text feedback__field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input field-text__input--rounded" type="text" placeholder="ИМЯ" id="">
+                  </span>
+                </label>
+                <label class="field-text feedback__field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input field-text__input--rounded" type="text" placeholder="ТЕЛЕФОН" id="">
+                  </span>
+                </label>
+                <div class="field-actions feedback__field">
+                  <button class="btn">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+    <div id="modal-call" class="modal" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header">
+            <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <h2 class="modal__title">Остались вопросы?</h2>
+            <p class="modal__caption">Для получения подробной инфомрации позвоните
+            нам по тел.: +7 (4712) 36-01-37 или оставьте заявку</p>
+          </div>
+          <div class="modal__body">
+            <form class="modal-call__form" action="">
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="ИМЯ" id="">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="ТЕЛЕФОН" id="">
+                </span>
+              </label>
+              <div class="field-actions">
+                <button class="btn">Оставить заявку</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer">
+            <p class="modal__footer-text">Оставляя заявку я соглашаюсь на обработку
+            персональных данных. <a href="#">Политика конфиденциальности</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>
