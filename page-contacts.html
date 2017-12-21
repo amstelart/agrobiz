@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Агробизнес</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+<link rel="apple-touch-icon" sizes="x" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/manifest.json">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+          <a href="/" class="logo logo--header">
+            Агро<span>бизнес</span>
+          </a>
+          <div class="info info--header">
+            <div class="info__item info__item--phone">
+              <span>+7 (4712) 36-01-37</span>
+            </div>
+            <div class="info__item info__item--mail">
+              <a href="mailto:office@gk-agrobusiness.ru">office@gk-agrobusiness.ru</a>
+            </div>
+            <div class="info__item">
+              <a href="#">Схема проезда</a>
+            </div>
+          </div>
+          <button class="btn btn--rounded btn--call" type="button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+          <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+        </div>
+      </header>
+      <!-- DEV
+      Для использования этого файла как шаблона:
+      @ @include('blocks/main-nav/main-nav.html')
+      (Нужно убрать пробел между символами @)
+      Подробнее: https://www.npmjs.com/package/gulp-file-include
+       -->
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <div class="main-nav__inner">
+          <!-- <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button> -->
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--active">
+              <a href="#" class="main-nav__link">
+                Семена
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Микроудобрения
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Пестициды
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Прайс-лист
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Отчеты и отзывы
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Свидетельства и декларации
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Вакансии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="page-contacts.html" class="main-nav__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="page-section">
+        <div class="page-section__inner">
+          <div class="page-section__header">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Контакты</a></li>
+            </ul>
+            <h1 class="page-title">Контакты</h1>
+          </div>
+          <div class="contacts">
+            <div class="contacts__info">
+              <p><strong>Адрес:</strong> 307030 Курская область, Медвенский р-н, пгт. Медвенка, ул. Промышленная,25</p>
+              <p><strong>Телефон:</strong> +7 (4712) 36-01-37</p>
+              <p><strong>E-mail:</strong> office@gk-agrobusiness.ru</p>
+            </div>
+            <div class="contacts__image">
+              <img src="img/contact-image.jpg" alt="">
+            </div>
+            <div class="contacts__map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac7ee213ae70def7de0f349b80623fbbe064c46f6fd890ce182fd39a1e9ef7434&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+          </div>
+          <!-- <main role="main">
+            <h1>NTH start project</h1>
+            <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
+          </main> -->
+        </div>
+      </section>
+    </div>
+    <div class="page__footer-wrapper">
+      <section class="main-section main-section--overlay main-section--feedback" style="background-image: url(img/section-feedback-bg.jpg);">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Остались вопросы</h2>
+            <p class="main-section__title-caption">Для получения подробной инфомрации позвоните нам по тел.: +7 (4712) 36-01-37 или оставьте заявку</p>
+          </div>
+          <div class="feedback">
+            <form class="feedback__form" action="">
+              <div class="fields-group feedback__fields-group">
+                <label class="field-text feedback__field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input field-text__input--rounded" type="text" placeholder="ИМЯ" id="">
+                  </span>
+                </label>
+                <label class="field-text feedback__field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input field-text__input--rounded" type="text" placeholder="ТЕЛЕФОН" id="">
+                  </span>
+                </label>
+                <div class="field-actions feedback__field">
+                  <button class="btn">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer-top">
+          <div class="page-footer-top__inner">
+            <div class="page-footer-top__content">
+              <div class="page-footer-top__col page-footer-top__col--logo">
+                <a href="/" class="logo logo--footer">
+                  Агро<span>бизнес</span>
+                </a>
+              </div>
+              <div class="page-footer-top__col page-footer-top__col--nav">
+                <nav class="footer-nav">
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Семена</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Микроудобрения</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Пестициды</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Прайс-лист</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Отчеты и отзывы</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Свидетельства</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Вакансии</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="page-footer-top__col page-footer-top__col--info">
+                <div class="info info--footer">
+                  <div class="info__item info__item--phone">
+                    <span>+7 (4712) 36-01-37</span>
+                  </div>
+                  <div class="info__item info__item--addres">
+                    <span>307030 Курская область, Медвенский р-н,
+                      пгт. Медвенка, ул. Промышленная,25</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer-bottom">
+          <div class="page-footer-bottom__inner">
+            <span class="dev-copyright">Разработка - <a href="http://www.2showbiz.ru/">Showbiz Studio</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="modal-call" class="modal" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header">
+            <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <h2 class="modal__title">Остались вопросы?</h2>
+            <p class="modal__caption">Для получения подробной инфомрации позвоните
+            нам по тел.: +7 (4712) 36-01-37 или оставьте заявку</p>
+          </div>
+          <div class="modal__body">
+            <form class="modal-call__form" action="">
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="ИМЯ" id="">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="ТЕЛЕФОН" id="">
+                </span>
+              </label>
+              <div class="field-actions">
+                <button class="btn">Оставить заявку</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer">
+            <p class="modal__footer-text">Оставляя заявку я соглашаюсь на обработку
+            персональных данных. <a href="#">Политика конфиденциальности</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/global-script.js"></script>
+</body>
+</html>

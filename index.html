@@ -64,6 +64,59 @@
           <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
         </div>
       </header>
+      <!-- DEV
+      Для использования этого файла как шаблона:
+      @ @include('blocks/main-nav/main-nav.html')
+      (Нужно убрать пробел между символами @)
+      Подробнее: https://www.npmjs.com/package/gulp-file-include
+       -->
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <div class="main-nav__inner">
+          <!-- <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button> -->
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--active">
+              <a href="#" class="main-nav__link">
+                Семена
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Микроудобрения
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Пестициды
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Прайс-лист
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Отчеты и отзывы
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Свидетельства и декларации
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Вакансии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="page-contacts.html" class="main-nav__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <section class="main-section main-section--main-slider">
         <div class="owl-carousel" id="main-slider">
           <div class="main-slider__item" style="background-image: url(img/demo-slide-image-01.jpg);">
@@ -300,7 +353,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="main-section main-section--testimonies">
+      <section class="main-section main-section--testimonies">
         <div class="main-section__inner">
           <div class="main-section__header main-section__header--action">
             <h2 class="main-section__title">Свидетельства и декларации</h2>
@@ -345,8 +398,8 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="main-section main-section--reviews">
+      </section>
+      <section class="main-section main-section--reviews">
         <div class="main-section__inner">
           <div class="main-section__header main-section__header--action">
             <h2 class="main-section__title">Отзывы</h2>
@@ -390,7 +443,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="main-section main-section--overlay main-section--number" style="background-image: url(img/section-number-bg2.jpg);">
         <div class="main-section__inner">
           <div class="main-section__header">
@@ -496,6 +549,12 @@
           </div>
         </div>
       </section>
+      <!-- <main role="main">
+        <h1>NTH start project</h1>
+        <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
+      </main> -->
+    </div>
+    <div class="page__footer-wrapper">
       <section class="main-section main-section--overlay main-section--feedback" style="background-image: url(img/section-feedback-bg.jpg);">
         <div class="main-section__inner">
           <div class="main-section__header">
@@ -523,12 +582,6 @@
           </div>
         </div>
       </section>
-      <!-- <main role="main">
-        <h1>NTH start project</h1>
-        <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
-      </main> -->
-    </div>
-    <div class="page__footer-wrapper">
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer-top">
           <div class="page-footer-top__inner">
