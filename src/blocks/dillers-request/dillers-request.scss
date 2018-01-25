@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока dillers-request, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.dillers-request {
+
+  $block-name:                &; // #{$block-name}__element
+
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+
+  .dillers-request__header {
+    margin-bottom: 30px;
+  }
+
+  .dillers-request__title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .dillers-request__caption {
+    margin: 0;
+  }
+
+}

@@ -78,7 +78,9 @@
     "page-title": [],
     "vacancies": [],
     "doc-gallery": [],
-    "dillers": []
+    "dillers": [],
+    "dillers-request": [],
+    "request-form": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
