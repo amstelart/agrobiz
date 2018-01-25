@@ -6,17 +6,8 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  @include row;
-
   &__item {
-    @include make-col(12);
     margin-bottom: 25px;
-    @media (min-width: $screen-md) {
-      @include make-col(6);
-    }
-    @media (min-width: $screen-lg) {
-      @include make-col(3);
-    }
   }
 
   &__link {

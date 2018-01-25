@@ -77,7 +77,8 @@
     "contacts": [],
     "page-title": [],
     "vacancies": [],
-    "doc-gallery": []
+    "doc-gallery": [],
+    "dillers": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
